@@ -1,26 +1,18 @@
 {
   "name": "express-xcontroller",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Node后端微服务框架，基于express-xcontroller中间件，自动路由映射控制器文件",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cheneyweb/express-xcontroller.git"
+    "start": "node app.js"
   },
   "author": "cheneyxu",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "config": "^1.25.1",
-    "express": "^4.15.2",
-    "express-session": "^1.15.1",
-    "tracer": "^0.8.7"
-  },
-  "bugs": {
-    "url": "https://github.com/cheneyweb/express-xcontroller/issues"
-  },
-  "homepage": "https://github.com/cheneyweb/express-xcontroller#readme"
+    "body-parser": "^1.18.2",
+    "config": "^1.28.1",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "tracer": "^0.8.11"
+  }
 }

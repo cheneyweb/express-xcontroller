@@ -7,14 +7,12 @@ const path = require('path')
  * controllerRoot 控制器访问跟路径，默认是/xserver/
  * app 应用实例对象
  */
-let xcontroller = {
+const xcontroller = {
     loadController(app, controllerRoot = '/xserver/', controllerDir = __dirname + '/../../src/controller/') {
-        controllerRoot = controllerRoot || '/xserver/'
-        controllerDir = controllerDir || __dirname + '/../../src/controller/'
         // 加载所有控制器
         fs.readdirSync(controllerDir).forEach(function(filename) {
-            let moduleName = `${controllerRoot}${path.basename(filename, '.js')}` // 请求模块名称,user.js就是/user/*的映射
-            let controller = require(controllerDir + filename)  // 模块路由
+            const moduleName = `${controllerRoot}${path.basename(filename, '.js')}` // 请求模块名称,user.js就是/user/*的映射
+            const controller = require(controllerDir + filename)  // 模块路由
             app.use(moduleName, controller)                     // 加载路由
         })
     }
