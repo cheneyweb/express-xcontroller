@@ -16,3 +16,13 @@ Node后端微服务框架，基于express-xcontroller中间件，自动路由映
 	│   └── controller
 	└── xcontroller_modules
 	    └── express-xcontroller
+
+帮助联系
+>
+	作者:cheneyxu
+	邮箱:457299596@qq.com
+	QQ:457299596
+
+更新日志
+>
+	2018.05.02:更新所有依赖，精简优化配置，全新1.0版本发布
